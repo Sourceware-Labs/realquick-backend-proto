@@ -1,0 +1,9 @@
+services:
+  devcontainer:
+    build: 
+      context: ./docker
+      dockerfile: Dockerfile.local
+    volumes: 
+      - .:/workspace:cached
+    ports:
+      - "1111:1111"
